@@ -1,0 +1,89 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+
+#cuerpo_form
+{
+    height: 150px;
+    width: 300px;
+}
+#cuerpo_form_offline
+{
+    height: 150px;
+    width: 300px;
+}
+#cuerpo_form_chat
+{
+    height: 150px;
+    width: 300px;
+}
+#cuerpo_form_end
+{
+    height: 150px;
+    width: 300px;
+}
+#cuerpo_form_msj
+{
+    height: 150px;
+    width: 300px;
+}
+.exmpl
+{
+    color:Gray;
+    font-style:italic;
+}
+
+#campos
+{
+    padding:0;
+    margin:0;
+    padding-top:5px;
+    font-family: Arial;
+    font-size:12px;
+}
+
+#campos_msj
+{
+    padding:0;
+    margin:0;
+    padding-top:140px;
+    font-family: Arial;
+    font-size:12px;
+}
+
+#nick
+{
+    padding:0;
+    margin:0;
+    padding-top:130px;
+    font-family: Arial;
+    font-size:12px;
+    display:none;
+}
+
+#apodo
+{
+    background-image: url("../images/chat/fondo_user.jpg");
+    height:93px;
+    width:361px;
+    margin:0 auto;
+   
+}
+
+#pos_nick
+{
+    padding-top:50px;
+    padding-left:70px;
+}
+
+#limpiar
+{
+    clear:both;
+}
+
+
+.bot_buscar{background: url(../images/chat/btn_chat.jpg) no-repeat 0px 0px; width: 150px; height: 34px;  font: 13px "Arial Narrow", Arial, Helvetica, sans-serif; color: #FFF; text-align: center; margin: 0px 0px 0px 5px; padding: 0px; border: none; cursor: pointer;}
+
+.bot_mensaje{background: url(../images/chat/btn_msj.jpg) no-repeat 0px 0px; width: 200px; height: 34px;  font: 13px "Arial Narrow", Arial, Helvetica, sans-serif; color: #FFF; text-align: center; margin: 0px 0px 0px 5px; padding: 0px; border: none; cursor: pointer;}

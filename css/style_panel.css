@@ -1,0 +1,436 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clear{
+    clear: both;
+    float: none;
+}
+.centrar{
+    width: 860px;
+    margin: 0 auto 0 auto;
+}
+
+#beneficiarios{
+    height: 650px;
+    width: 900px;
+    margin: 0 auto 0 auto;
+    position: relative;
+   /* box-shadow: 0 3px 10px #666;*/
+}
+#beneficiarios .separador{
+    background-color: #ccc;
+    height: 1px;
+    width: 490px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+#beneficiarios h2{
+    color: #f39c00;
+    font-size: 18px;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+#beneficiarios .titulo{
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+#beneficiarios .estado{
+    margin-top: 14px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#beneficiarios .estado a:link{
+    text-decoration: none;
+}
+#beneficiarios .estado a:hover{
+    text-decoration: underline;
+}
+
+.obs_btn{
+    background-color: #0066FF;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+#beneficiarios .popup_beneficiarios table a.enlace:link{
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0px;
+}
+#beneficiarios .popup_beneficiarios table a.enlace:hover{
+    color: white;
+    text-decoration: underline;
+}
+#beneficiarios .popup_beneficiarios table a.enlace:visited{
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+#beneficiarios a.enlace:link{
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 60px;
+}
+#beneficiarios a.enlace:visited{
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 60px;
+}
+#beneficiarios a.enlace:hover{
+    color: white;
+    text-decoration: underline;
+}
+#beneficiarios .fondo_vivienda{
+    width: 240px;
+    height: 350px;
+    position: absolute;
+    left: 470px;
+    top: 120px;
+}
+#beneficiarios .fondo_vivienda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#beneficiarios .fondo_estudios{
+    width: 240px;
+    height: 350px;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+#beneficiarios .fondo_estudios img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#beneficiarios .popup_observaciones{
+    position: absolute;
+    z-index: 20;
+    width: 555px;
+    height: 430px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    top: 70px;
+    left: 295px;
+    display: none;
+    font-family: arial, sans-serif;
+}
+
+#beneficiarios .popup_beneficiarios{
+    position: absolute;
+    z-index: 10;
+    width: 555px;
+    height: 430px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    top: 70px;
+    left: 295px;
+    display: none;
+    font-family: arial, sans-serif;
+}
+#beneficiarios .popup_beneficiarios .titulo{
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+#beneficiarios .popup_beneficiarios table{
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 0;
+    font-size: 12px;
+    padding-top: 0;
+    border: none;
+}
+#beneficiarios .popup_beneficiarios table td img{
+    margin-left: 30px;
+    display: block;
+}
+#beneficiarios .popup_beneficiarios th{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#beneficiarios .popup_beneficiarios td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f2f2f2;
+}
+#beneficiarios .popup_beneficiarios a.enlace{
+    margin-left: 30px;
+}
+
+#beneficiarios .popup_nuevobeneficiario{
+    position: absolute;
+    z-index: 11;
+    width: 555px;
+    height: 430px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    top: 70px;
+    left: 295px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    display: none;
+}
+
+#beneficiarios .popup_nuevobeneficiario .cajaguion{
+    float: left;
+    width: 8px;
+    height: 15px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+#beneficiarios .popup_nuevobeneficiario form{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+#beneficiarios .popup_nuevobeneficiario .desc{
+    width: 65px;
+    float: left;
+    font-weight: bold;
+}
+#beneficiarios .popup_nuevobeneficiario input[type="text"]{
+    width: 100px;
+    float: left;
+    height: 15px;
+    margin-bottom: 20px;
+}
+#beneficiarios .popup_nuevobeneficiario select{
+    width: 143px;
+    float: left;
+    margin-bottom: 30px;
+    height: 21px;
+}
+#beneficiarios .popup_nuevobeneficiario input[type="button"]{
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin-left: 66px;
+}
+
+#beneficiarios .popup_nuevobeneficiario #mensaje{
+    margin-top: 15px;
+    color: #f39c00;
+    font-weight: bold;
+    margin-left: 66px;
+    width: 140px;
+}
+
+#beneficiarios .popup_nuevobeneficiario input[type=submit] {
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 33px;
+    border: none;
+    cursor: pointer;
+}
+#beneficiarios .volver {
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    cursor: pointer;
+    bottom: 20px;
+    left: 30px;
+}
+
+#beneficiarios #listar_postulaciones{
+    height: 259px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+#beneficiarios .contenedor_observaciones{
+    height: 285px;
+    width: 490px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#beneficiarios .popup_beneficiarios table a.encurso:link{
+    background-color: #408A2F;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0px;
+}
+#beneficiarios .popup_beneficiarios table a.encurso:hover{
+    color: white;
+    text-decoration: underline;
+}
+#beneficiarios .popup_beneficiarios table a.encurso:visited{
+    background-color: #408A2F;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+/* ***/
+
+#beneficiarios .popup_nuevovivienda{
+    position: absolute;
+    z-index: 11;
+    width: 555px;
+    height: 430px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    top: 70px;
+    left: 295px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    display: none;
+}
+
+#beneficiarios .popup_nuevovivienda .cajaguion{
+    float: left;
+    width: 8px;
+    height: 15px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+#beneficiarios .popup_nuevovivienda form{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+#beneficiarios .popup_nuevovivienda .desc{
+    width: 65px;
+    float: left;
+    font-weight: bold;
+}
+#beneficiarios .popup_nuevovivienda input[type="text"]{
+    width: 100px;
+    float: left;
+    height: 15px;
+    margin-bottom: 20px;
+}
+#beneficiarios .popup_nuevovivienda select{
+    width: 143px;
+    float: left;
+    margin-bottom: 30px;
+    height: 21px;
+}
+#beneficiarios .popup_nuevovivienda input[type="button"]{
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin-left: 66px;
+}
+
+#beneficiarios .popup_nuevovivienda #mensaje{
+    margin-top: 15px;
+    color: #f39c00;
+    font-weight: bold;
+    margin-left: 66px;
+    width: 140px;
+}
+
+#beneficiarios .popup_nuevovivienda input[type=submit] {
+    background-color: #f39c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 33px;
+    border: none;
+    cursor: pointer;
+}
